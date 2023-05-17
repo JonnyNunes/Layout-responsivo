@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/iconsHTML.png">
+    <title>Layout | Pro</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="./css/padraoResponsivo.css">
+</head>
+
+<body>
+    <!--Estamos usando o container, deixa os elementos bem aninhado na pagina-->
+    <header class="container">
+        <div class="logo">
+            <img src="./img/logo.png" alt="logo">
+            <h2>HTML-PRO</h2>
+        </div>
+    </header>
+
+    <!--Criar a primeira sessao (SECTION - 1)-->
+    <section class="section-introducao container">
+        <div class="ebook">
+            <img src="./img/ebookHTMLCSS.png" alt="ebook-HTML-CSS" title="ebook">
+        </div>
+        <div class="action-title">
+            <h2>
+                Aprenda Html e CSS de forma inovadora e pratico
+            </h2>
+            <a class="button" href="https://materiais.horadecodar.com.br/agradecimento-de-e-books" title="https://materiais.horadecodar.com.br/agradecimento-de-e-books">Ir pro site</a>
+        </div>
+    </section>
+
+    <!--Criar a primeira sessao (SECTION - 2)-->
+    <section class="section-assinatura container">
+        <!--Dentro dessa sessao temos um h2 e divs que sao filho da div pai-->
+        <h2>Nivel de aprendizagem</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="./img/iconsCSS.png" alt="CSS">
+                <p>
+                    CSS básico
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./img/iconsCSS.png" alt="CSS">
+                <p>
+                    CSS intermediário
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./img/iconsCSS.png" alt="CSS">
+                <p>
+                    CSS avançado
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--Criar a primeira sessao (SECTION - 3)-->
+    <section class="section-download container">
+        <a class="button-pe" href="https://www.cursoemvideo.com/curso/html5/" title="https://www.cursoemvideo.com/curso/html5/">Aprenda HTML</a>
+        <h2>1000 Downloads</h2>
+        <p>Diversas pessoas já baixaram</p>
+    </section>
+
+    <!--Rodape-->
+    <footer class="rodape-page">
+        <a href="https://www.hostinger.com.br/tutoriais/como-deixar-um-site-responsivo" title="https://www.hostinger.com.br/tutoriais/como-deixar-um-site-responsivo" class="button-footer">Guia</a>
+        <p>Landing page responsiva</p>
+    </footer>
+
+</body>
+
+</html>

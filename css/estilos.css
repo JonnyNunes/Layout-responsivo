@@ -1,0 +1,175 @@
+/*Vamos criar variaveis para definir o padrao de cores dos elementos da pagina*/
+:root{
+    /*Para o fundo da pagina*/
+    --bg-body: rgb(25, 7, 48);
+    /*Para os textos de coteudo*/
+    --color-font: #ffffff;
+    /*Para os botoes*/
+    --color-button: #0a5761;
+    /*Cores dos cartoes*/
+    --color-card: #16106b;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    /*Usando o var para puxar a variavel criada*/
+    background-color: var(--bg-body);
+    color: var(--color-font);
+}
+
+.container{
+    /*Largura maxima do container*/
+    max-width: 830px;
+    margin: auto;
+}
+
+header.container .logo{
+    /*Lembrando que o padrao do flex e alinhar os itens em row (linha)*/
+    display: flex;
+    justify-content: center;
+    /*
+    flex-direction: column;
+    Aninhar no centro o itens depois de dar o flex-direction
+    */
+    align-items: center;
+    margin-top: 25px;
+}
+
+div.logo img{
+    width: 75px;
+    margin-right: 5px;
+}
+
+/*Sessao 1*/
+section.section-introducao{
+    display: flex;
+    margin-top: 100px;
+}
+
+section.section-introducao .button{
+    background-color: var(--color-button);
+    /*Por padrao a tag a e do tipo inline*/
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 25px;
+    color: var(--color-font);
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /*Tirar o sublinhar do texto*/
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+div.action-title{
+    padding: 25px 0;
+}
+
+/*Especificando que na classe action-title na div vai pegar o h2*/
+div.action-title h2{
+    font-size: 40px;
+}
+
+/*Especificando que na classe ebook na div vai pegar o img*/
+div.ebook img{
+    width: 300px;
+    height: auto;
+}
+
+/*Sessao 2*/
+section.section-assinatura{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin-top: 100px;
+}
+
+section.section-assinatura h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div.cards{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    /*Os itens estao pegando em ponta a ponta, mas precisa tirar o aling-items do pai*/
+    justify-content: space-between;
+}
+
+div.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 180px;
+    height: 150px;
+    border-radius: 15px;
+    background-color: var(--color-card);
+    gap: 10px;
+}
+
+div.card img{
+    width: 75px;
+    cursor: pointer;
+}
+
+/*Sessao 3*/
+section.section-download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+section.section-download .button-pe{
+    /*Conseguir estilizar o botao com a tag a*/
+    display: inline-block;
+    background-color: rgb(2, 6, 51);
+    padding: 15px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-font);
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+section.section-download h2{
+    font-size: 50px;
+    color: rgb(24, 9, 156);
+    margin: 15px 0;
+}
+
+section.section-download p{
+    font-size: 15px;
+}
+
+/*Rodape da pagina*/
+footer.rodape-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    background-color: #080620;
+    padding-bottom: 30px;
+    height: 80px;
+}
+
+footer.rodape-page .button-footer{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 70px;
+    color: var(--color-font);
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--color-button);
+    border-radius: 25px;
+    margin-top: -45px;
+}
+
+footer.rodape-page p{
+    margin-top: 30px;
+}
